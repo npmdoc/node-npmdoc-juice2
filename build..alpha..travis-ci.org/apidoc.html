@@ -1,0 +1,1009 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/andrewrk/juice"
+
+    >juice2 (v1.3.1)</a>
+</h1>
+<h4>Inlines css into html source</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.juice2">module juice2</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Property">
+            function <span class="apidocSignatureSpan">juice2.</span>Property
+            <span class="apidocSignatureSpan">(prop, value, selector)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Selector">
+            function <span class="apidocSignatureSpan">juice2.</span>Selector
+            <span class="apidocSignatureSpan">(text, spec)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.inlineContent">
+            function <span class="apidocSignatureSpan">juice2.</span>inlineContent
+            <span class="apidocSignatureSpan">(html, css)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.inlineDocument">
+            function <span class="apidocSignatureSpan">juice2.</span>inlineDocument
+            <span class="apidocSignatureSpan">(document, css, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.juiceContent">
+            function <span class="apidocSignatureSpan">juice2.</span>juiceContent
+            <span class="apidocSignatureSpan">(html, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.juiceDocument">
+            function <span class="apidocSignatureSpan">juice2.</span>juiceDocument
+            <span class="apidocSignatureSpan">(document, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.juiceFile">
+            function <span class="apidocSignatureSpan">juice2.</span>juiceFile
+            <span class="apidocSignatureSpan">(filePath, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">juice2.</span>Property.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">juice2.</span>Selector.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">juice2.</span>ignoredPseudos</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">juice2.</span>utils</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">juice2.</span>widthElements</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">juice2.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.juice2.Property">module juice2.Property</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Property.Property">
+            function <span class="apidocSignatureSpan">juice2.</span>Property
+            <span class="apidocSignatureSpan">(prop, value, selector)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.juice2.Property.prototype">module juice2.Property.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Property.prototype.compare">
+            function <span class="apidocSignatureSpan">juice2.Property.prototype.</span>compare
+            <span class="apidocSignatureSpan">(property)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Property.prototype.toString">
+            function <span class="apidocSignatureSpan">juice2.Property.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.juice2.Selector">module juice2.Selector</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Selector.Selector">
+            function <span class="apidocSignatureSpan">juice2.</span>Selector
+            <span class="apidocSignatureSpan">(text, spec)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.juice2.Selector.prototype">module juice2.Selector.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Selector.prototype.parsed">
+            function <span class="apidocSignatureSpan">juice2.Selector.prototype.</span>parsed
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.Selector.prototype.specificity">
+            function <span class="apidocSignatureSpan">juice2.Selector.prototype.</span>specificity
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.juice2.utils">module juice2.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.utils.compare">
+            function <span class="apidocSignatureSpan">juice2.utils.</span>compare
+            <span class="apidocSignatureSpan">(a, b)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.utils.extend">
+            function <span class="apidocSignatureSpan">juice2.utils.</span>extend
+            <span class="apidocSignatureSpan">(obj, src)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.utils.extract">
+            function <span class="apidocSignatureSpan">juice2.utils.</span>extract
+            <span class="apidocSignatureSpan">(selectorText)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.utils.getMediaQueryText">
+            function <span class="apidocSignatureSpan">juice2.utils.</span>getMediaQueryText
+            <span class="apidocSignatureSpan">( css )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.utils.jsdom">
+            function <span class="apidocSignatureSpan">juice2.utils.</span>jsdom
+            <span class="apidocSignatureSpan">(html)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.utils.parseCSS">
+            function <span class="apidocSignatureSpan">juice2.utils.</span>parseCSS
+            <span class="apidocSignatureSpan">(css)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.juice2.utils.toArray">
+            function <span class="apidocSignatureSpan">juice2.utils.</span>toArray
+            <span class="apidocSignatureSpan">(arr)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.juice2" id="apidoc.module.juice2">module juice2</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Property" id="apidoc.element.juice2.Property">
+        function <span class="apidocSignatureSpan">juice2.</span>Property
+        <span class="apidocSignatureSpan">(prop, value, selector)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Property(prop, value, selector) {
+  this.prop = prop;
+  this.value = value;
+  this.selector = selector
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Selector" id="apidoc.element.juice2.Selector">
+        function <span class="apidocSignatureSpan">juice2.</span>Selector
+        <span class="apidocSignatureSpan">(text, spec)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Selector(text, spec) {
+  this.text = text;
+  this.spec = spec;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.inlineContent" id="apidoc.element.juice2.inlineContent">
+        function <span class="apidocSignatureSpan">juice2.</span>inlineContent
+        <span class="apidocSignatureSpan">(html, css)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function inlineContent(html, css) {
+  var document = utils.jsdom(html);
+  inlineDocument(document, css, {});
+  var inner = document.innerHTML;
+  // free the associated memory
+  // with lazily created parentWindow
+  try {
+    document.parentWindow.close();
+  } catch (cleanupErr) {}
+  return inner;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+uses. Also be sure to clean up after you are done. You may have to
+call `document.parentWindow.close()` to free up memory.
+
+ * `document` - a jsdom instance
+ * `options` - see `juice.juiceContent`
+ * `callback(err)`
+
+### juice.<span class="apidocCodeKeywordSpan">inlineContent</span>(html, css)
+
+This takes html and css and returns new html with the provided css inlined.
+It does not look at `&#x3c;style&#x3e;` or `&#x3c;link rel=&#x22;stylesheet&#x22;&#x3e;` elements at all.
+
+### juice.inlineDocument(document, css, options)
+
+Given a jsdom instance and css, this modifies the jsdom instance so that the
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.inlineDocument" id="apidoc.element.juice2.inlineDocument">
+        function <span class="apidocSignatureSpan">juice2.</span>inlineDocument
+        <span class="apidocSignatureSpan">(document, css, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function inlineDocument(document, css, options) {
+
+  var rules = utils.parseCSS(css)
+    , editedElements = [];
+
+  rules.forEach(handleRule);
+  editedElements.forEach(setStyleAttrs);
+
+  if (options &#x26;&#x26; options.applyWidthAttributes) {
+    editedElements.forEach(setWidthAttrs);
+  }
+
+  function handleRule(rule) {
+    var sel = rule[0]
+      , style = rule[1]
+      , selector = new Selector(sel);
+
+    // skip rule if the selector has any pseudos which are ignored
+    var parsedSelector = selector.parsed();
+    for (var i = 0; i &#x3c; parsedSelector.length; ++i) {
+      var subSel = parsedSelector[i];
+      if (subSel.pseudos) {
+        for (var j = 0; j &#x3c; subSel.pseudos.length; ++j) {
+          var subSelPseudo = subSel.pseudos[j];
+          if (juice.ignoredPseudos.indexOf(subSelPseudo.name) &#x3e;= 0) return;
+        }
+      }
+    }
+
+    var els;
+    try {
+      els = document.querySelectorAll(sel);
+    } catch (err) {
+      // skip invalid selector
+      return;
+    }
+    utils.toArray(els).forEach(function (el) {
+      if (!el.styleProps) {
+        el.styleProps = {}
+
+        // if the element has inline styles, fake selector with topmost specificity
+        if (el.getAttribute(&#x27;style&#x27;)) {
+          var cssText = &#x27;* { &#x27; + el.getAttribute(&#x27;style&#x27;) + &#x27; } &#x27;
+          addProps(utils.parseCSS(cssText)[0][1], styleSelector);
+        }
+
+        // store reference to an element we need to compile style=&#x22;&#x22; attr for
+        editedElements.push(el);
+      }
+
+      // go through the properties
+      function addProps (style, selector) {
+        for (var i = 0, l = style.length; i &#x3c; l; i++) {
+          var name = style[i]
+            , value = style[name]
+            , sel = style._importants[name] ? importantSelector : selector
+            , prop = new Property(name, value, sel)
+            , existing = el.styleProps[name];
+
+          if (existing) {
+            var winner = existing.compare(prop)
+              , loser = prop === winner ? existing : prop
+
+            if (winner === prop) el.styleProps[name] = prop;
+          } else {
+            el.styleProps[name] = prop;
+          }
+        }
+      }
+
+      addProps(style, selector);
+    });
+  }
+
+  function setStyleAttrs(el) {
+    var style = [];
+    for (var i in el.styleProps) {
+      style.push(el.styleProps[i].prop + &#x22;: &#x22; + el.styleProps[i].value.replace(/[&#x22;]/g, &#x22;&#x27;&#x22;) + &#x22;;&#x22;);
+    }
+    // sorting will arrange styles like padding: before padding-bottom: which will preserve the expected styling
+    style = style.sort( function ( a, b )
+    {
+      var aProp = a.split( &#x27;:&#x27; )[0];
+      var bProp = b.split( &#x27;:&#x27; )[0];
+      return ( aProp &#x3e; bProp ? 1 : aProp &#x3c; bProp ? -1 : 0 );
+    } );
+    el.setAttribute(&#x27;style&#x27;, style.join(&#x27; &#x27;));
+  }
+
+  function setWidthAttrs(el) {
+    if (juice.widthElements.indexOf(el.nodeName) &#x3e; -1) {
+      for (var i in el.styleProps) {
+        if (el.styleProps[i].prop === &#x27;width&#x27; &#x26;&#x26; el.styleProps[i].value.match(/px/)) {
+          var pxWidth = el.styleProps[i].value.replace(&#x27;px&#x27;, &#x27;&#x27;);
+          el.setAttribute(&#x27;width&#x27;, pxWidth);
+          return;
+        }
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * `callback(err)`
+
+### juice.inlineContent(html, css)
+
+This takes html and css and returns new html with the provided css inlined.
+It does not look at `&#x3c;style&#x3e;` or `&#x3c;link rel=&#x22;stylesheet&#x22;&#x3e;` elements at all.
+
+### juice.<span class="apidocCodeKeywordSpan">inlineDocument</span>(document, css, options)
+
+Given a jsdom instance and css, this modifies the jsdom instance so that the
+provided css is inlined. It does not look at `&#x3c;style&#x3e;` or
+`&#x3c;link rel=&#x22;stylesheet&#x22;&#x3e;` elements at all.
+
+### juice.ignoredPseudos
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.juiceContent" id="apidoc.element.juice2.juiceContent">
+        function <span class="apidocSignatureSpan">juice2.</span>juiceContent
+        <span class="apidocSignatureSpan">(html, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function juiceContent(html, options, callback) {
+  assert.ok(options.url, &#x22;options.url is required&#x22;);
+  options = getDefaultOptions(options);
+  // hack to force jsdom to see this argument as html content, not a url
+  // or a filename. https://github.com/tmpvar/jsdom/issues/554
+  html += &#x22;\n&#x22;;
+  var document = utils.jsdom(html);
+  juiceDocument(document, options, function(err) {
+    if (err) {
+      // free the associated memory
+      // with lazily created parentWindow
+      try {
+       document.parentWindow.close();
+      } catch (cleanupErr) {}
+      callback(err);
+    } else {
+      var inner = document.innerHTML;
+      // free the associated memory
+      // with lazily created parentWindow
+      try {
+        document.parentWindow.close();
+      } catch (cleanupErr) {}
+      callback(null, inner);
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     to override, be sure your `url` has the protocol at the beginning, e.g.
+     `http://` or `file://`.
+ * `callback(err, html)`
+   - `err` - `Error` object or `null`.
+   - `html` - contains the html from `filePath`, with potentially `&#x3c;style&#x3e;` and
+     `&#x3c;link rel=&#x22;stylesheet&#x22;&#x3e;` tags removed, and css inlined.
+
+### juice.<span class="apidocCodeKeywordSpan">juiceContent</span>(html, options, callback)
+
+ * `html` - raw html content
+ * `options` - same options as calling `juice`, except now `url` is required.
+ * `callback(err, html)` - same as calling `juice`
+
+### juice.juiceDocument(document, options, callback)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.juiceDocument" id="apidoc.element.juice2.juiceDocument">
+        function <span class="apidocSignatureSpan">juice2.</span>juiceDocument
+        <span class="apidocSignatureSpan">(document, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function juiceDocument(document, options, callback) {
+  assert.ok(options.url, &#x22;options.url is required&#x22;);
+  options = getDefaultOptions(options);
+  extractCssFromDocument(document, options, function(err, css) {
+    css += &#x22;\n&#x22; + options.extraCss;
+    inlineDocumentWithCb(document, css, options, callback);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### juice.juiceContent(html, options, callback)
+
+* `html` - raw html content
+* `options` - same options as calling `juice`, except now `url` is required.
+* `callback(err, html)` - same as calling `juice`
+
+### juice.<span class="apidocCodeKeywordSpan">juiceDocument</span>(document, options, callback)
+
+Operates on a jsdom instance. Be sure to use the same jsdom version that juice
+uses. Also be sure to clean up after you are done. You may have to
+call `document.parentWindow.close()` to free up memory.
+
+* `document` - a jsdom instance
+* `options` - see `juice.juiceContent`
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.juiceFile" id="apidoc.element.juice2.juiceFile">
+        function <span class="apidocSignatureSpan">juice2.</span>juiceFile
+        <span class="apidocSignatureSpan">(filePath, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function juiceFile(filePath, options, callback) {
+  // set default options
+  fs.readFile(filePath, &#x27;utf8&#x27;, function(err, content) {
+    if (err) return callback(err);
+    options = getDefaultOptions(options); // so we can mutate options without guilt
+    var slashes = os.platform() === &#x27;win32&#x27; ? &#x27;\\\\&#x27; : &#x27;//&#x27;;
+    options.url = options.url || (&#x22;file:&#x22; + slashes + path.resolve(process.cwd(), filePath));
+    juiceContent(content, options, callback);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.juice2.Property" id="apidoc.module.juice2.Property">module juice2.Property</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Property.Property" id="apidoc.element.juice2.Property.Property">
+        function <span class="apidocSignatureSpan">juice2.</span>Property
+        <span class="apidocSignatureSpan">(prop, value, selector)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Property(prop, value, selector) {
+  this.prop = prop;
+  this.value = value;
+  this.selector = selector
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.juice2.Property.prototype" id="apidoc.module.juice2.Property.prototype">module juice2.Property.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Property.prototype.compare" id="apidoc.element.juice2.Property.prototype.compare">
+        function <span class="apidocSignatureSpan">juice2.Property.prototype.</span>compare
+        <span class="apidocSignatureSpan">(property)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compare = function (property) {
+  var a = this.selector.specificity()
+    , b = property.selector.specificity()
+    , winner = compare(a, b)
+
+  if (winner == a) return this;
+  return property;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Property.prototype.toString" id="apidoc.element.juice2.Property.prototype.toString">
+        function <span class="apidocSignatureSpan">juice2.Property.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+  return this.prop + &#x27;: &#x27; + this.value.replace(/[&#x27;&#x22;]+/g, &#x27;&#x27;) + &#x27;;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.juice2.Selector" id="apidoc.module.juice2.Selector">module juice2.Selector</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Selector.Selector" id="apidoc.element.juice2.Selector.Selector">
+        function <span class="apidocSignatureSpan">juice2.</span>Selector
+        <span class="apidocSignatureSpan">(text, spec)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Selector(text, spec) {
+  this.text = text;
+  this.spec = spec;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.juice2.Selector.prototype" id="apidoc.module.juice2.Selector.prototype">module juice2.Selector.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Selector.prototype.parsed" id="apidoc.element.juice2.Selector.prototype.parsed">
+        function <span class="apidocSignatureSpan">juice2.Selector.prototype.</span>parsed
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parsed = function () {
+  if (!this.tokens) this.tokens = parse(this.text);
+  return this.tokens;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.Selector.prototype.specificity" id="apidoc.element.juice2.Selector.prototype.specificity">
+        function <span class="apidocSignatureSpan">juice2.Selector.prototype.</span>specificity
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">specificity = function () {
+  if (!this.spec) this.spec = specificity(this.text, this.parsed());
+  return this.spec;
+
+  function specificity (text, parsed) {
+    var expressions = parsed || parse(text)
+      , spec = [0, 0, 0, 0]
+      , nots = []
+
+    for (var i = 0; i &#x3c; expressions.length; i++) {
+      var expression = expressions[i]
+        , pseudos = expression.pseudos
+
+      // id awards a point in the second column
+      if (expression.id) spec[1]++;
+
+      // classes and attributes award a point each in the third column
+      if (expression.attributes) spec[2] += expression.attributes.length;
+      if (expression.classList) spec[2] += expression.classList.length;
+
+      // tag awards a point in the fourth column
+      if (expression.tag &#x26;&#x26; expression.tag !== &#x27;*&#x27;) spec[3]++;
+
+      // pseudos award a point each in the fourth column
+      if (pseudos) {
+        spec[3] += pseudos.length;
+
+        for (var p = 0; p &#x3c; pseudos.length; p++) {
+         if (pseudos[p].key === &#x27;not&#x27;){
+            nots.push(pseudos[p].value);
+            spec[3]--;
+          }
+        }
+      }
+    }
+
+    for (var ii = nots.length; ii--;) {
+      var not = specificity(nots[ii]);
+      for (var jj = 4; jj--;) spec[jj] += not[jj];
+    }
+
+    return spec;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.juice2.utils" id="apidoc.module.juice2.utils">module juice2.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.utils.compare" id="apidoc.element.juice2.utils.compare">
+        function <span class="apidocSignatureSpan">juice2.utils.</span>compare
+        <span class="apidocSignatureSpan">(a, b)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compare = function (a, b) {
+  for (var i = 0; i &#x3c; 4; i++) {
+    if (a[i] === b[i]) continue;
+    if (a[i] &#x3e; b[i]) return a;
+    return b;
+  }
+
+  return b;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.utils.extend" id="apidoc.element.juice2.utils.extend">
+        function <span class="apidocSignatureSpan">juice2.utils.</span>extend
+        <span class="apidocSignatureSpan">(obj, src)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">extend = function (obj, src) {
+  for (var key in src) if (own.call(src, key)) obj[key] = src[key];
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.utils.extract" id="apidoc.element.juice2.utils.extract">
+        function <span class="apidocSignatureSpan">juice2.utils.</span>extract
+        <span class="apidocSignatureSpan">(selectorText)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function extract(selectorText) {
+  var attr = 0
+    , sels = []
+    , sel = &#x27;&#x27;
+
+  for (var i = 0, l = selectorText.length; i &#x3c; l; i++) {
+    var c = selectorText.charAt(i);
+
+    if (attr) {
+      if (&#x27;]&#x27; === c || &#x27;)&#x27; === c) attr--;
+      sel += c;
+    } else {
+      if (&#x27;,&#x27; === c) {
+        sels.push(sel);
+        sel = &#x27;&#x27;;
+      } else {
+        if (&#x27;[&#x27; === c || &#x27;(&#x27; === c) attr++;
+        if (sel.length || (c !== &#x27;,&#x27; &#x26;&#x26; c !== &#x27;\n&#x27; &#x26;&#x26; c !== &#x27; &#x27;)) sel += c;
+      }
+    }
+  }
+
+  if (sel.length) sels.push(sel);
+
+  return sels;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.utils.getMediaQueryText" id="apidoc.element.juice2.utils.getMediaQueryText">
+        function <span class="apidocSignatureSpan">juice2.utils.</span>getMediaQueryText
+        <span class="apidocSignatureSpan">( css )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getMediaQueryText = function ( css )
+{
+	var rules = cssom.parse( css ).cssRules || []
+	var queries = [];
+
+	for ( var i = 0, l = rules.length; i &#x3c; l; i++ )
+	{
+		/* CSS types
+		  STYLE: 1,
+		  IMPORT: 3,
+		  MEDIA: 4,
+		  FONT_FACE: 5,
+		 */
+
+		if ( rules[i].type === cssom.CSSMediaRule.prototype.type )
+		{
+			var query = rules[i];
+			var queryString = [];
+
+			queryString.push( os.EOL + &#x22;@media &#x22; + query.media[0] + &#x22; {&#x22; );
+
+			for ( var ii = 0, ll = query.cssRules.length; ii &#x3c; ll; ii++ )
+			{
+				var rule = query.cssRules[ii];
+
+				if ( rule.type === cssom.CSSStyleRule.prototype.type || rule.type === cssom.CSSFontFaceRule.prototype.type )
+				{
+					queryString.push( &#x22;  &#x22; + ( rule.type === cssom.CSSStyleRule.prototype.type ? rule.selectorText : &#x22;@font-face&#x22; ) + &#x22; {&#x22; );
+
+					for ( var style = 0; style &#x3c; rule.style.length; style++ )
+					{
+						var property = rule.style[style];
+						var value = rule.style[property];
+						var important = rule.style._importants[property] ? &#x22; !important&#x22; : &#x22;&#x22;;
+						queryString.push( &#x22;    &#x22; + property + &#x22;: &#x22; + value + important + &#x22;;&#x22; );
+					}
+					queryString.push( &#x22;  }&#x22; );
+				}
+			}
+
+			queryString.push( &#x22;}&#x22; );
+			var result = queryString.length ? queryString.join( os.EOL ) + os.EOL : &#x22;&#x22;;
+
+			queries.push( result );
+		}
+	}
+
+	return queries.join( os.EOL );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.utils.jsdom" id="apidoc.element.juice2.utils.jsdom">
+        function <span class="apidocSignatureSpan">juice2.utils.</span>jsdom
+        <span class="apidocSignatureSpan">(html)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">jsdom = function (html) {
+  return jsdom.html(html, null, {
+    features: {
+        QuerySelector: [&#x27;1.0&#x27;]
+      , FetchExternalResources: false
+      , ProcessExternalResources: false
+      , MutationEvents: false
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.utils.parseCSS" id="apidoc.element.juice2.utils.parseCSS">
+        function <span class="apidocSignatureSpan">juice2.utils.</span>parseCSS
+        <span class="apidocSignatureSpan">(css)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseCSS = function (css) {
+  var rules = cssom.parse(css).cssRules || []
+    , ret = []
+
+  for (var i = 0, l = rules.length; i &#x3c; l; i++) {
+    if (rules[i].selectorText) { // media queries don&#x27;t have selectorText
+      var rule = rules[i]
+        , selectors = exports.extract(rule.selectorText)
+
+      for (var ii = 0, ll = selectors.length; ii &#x3c; ll; ii++) {
+        ret.push([selectors[ii], rule.style]);
+      }
+    }
+  }
+
+  return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.juice2.utils.toArray" id="apidoc.element.juice2.utils.toArray">
+        function <span class="apidocSignatureSpan">juice2.utils.</span>toArray
+        <span class="apidocSignatureSpan">(arr)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toArray = function (arr) {
+  var ret = [];
+
+  for (var i = 0, l = arr.length; i &#x3c; l; i++)
+    ret.push(arr[i]);
+
+  return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
